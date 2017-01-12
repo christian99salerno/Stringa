@@ -1,0 +1,2 @@
+# Stringa
+Classe Stringa
