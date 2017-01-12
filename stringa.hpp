@@ -12,5 +12,5 @@ class Stringa {
   Stringa(int c);
   Stringa(char b[]);
   char* get();
-}
+};
 #endif

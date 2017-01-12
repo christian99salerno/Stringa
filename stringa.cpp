@@ -11,7 +11,7 @@ Stringa::Stringa(int c){
 }
 
 Stringa::Stringa(char b[]){
-  strncpy(this->s, s, string_size);
+  strncpy(this->s, b, string_size);
   this->s[string_size-1]='\0';
 }
 
