@@ -3,17 +3,11 @@
 
 int main(){
 using namespace std()   
-// NON COSI'
-//Stringa() str;  
-//Stringa('S') lettera;
-//Stringa("Come state?") frase;
-// è vero colpa mia!! 
 
   Stringa str;
-  Stringa('S') lettera;
-  Stringa("Come state?") frase;
+  Stringa lettera('S');
+  Stringa frase("Come state?");
 
-//metto using namespace molto meglio
 cout<<lettera.get()<< endl;
 cout<<frase.get()<< endl;  
 
