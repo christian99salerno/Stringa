@@ -7,15 +7,21 @@ Stringa::Stringa(){
 }
 
 Stringa::Stringa(int c){
-  set(const int* c);
+  // qui la funzione set() la devi chiamare!!! non riscrivere
+  //set(const int* c);
 }
 
 Stringa::Stringa(char b[]){
-  set(const char* b);
+  // come prima, devi chiamare!!!
+  //set(const char* b);
 }
 
-Stringa::
+// distruttore
+Stringa::~Stringa()
+{
+}
 
+// il puntatore!
 void set(const int* c){
   this->s=new char[2];
   this->s[0]=c;

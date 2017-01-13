@@ -9,8 +9,14 @@ class Stringa {
   Stringa();
   Stringa(int c);
   Stringa(char b[]);
-  Stringa();
+
+  // il distruttore, ci vuole ~
+  ~Stringa();
+
+  // perche' metti un puntatore qui? e' solo un carattere
   set(const int* c);
+
+  // qui va bene perche' e' una stringa
   set(const char* b);
   char* get();
 };
