@@ -1,9 +1,7 @@
-//#include <stdio.h>
 #include <iostream>
 
 #include "stringa.hpp"
 
-// questo si mette qui e senza parentesi ()
 using namespace std;
 
 int main()

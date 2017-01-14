@@ -9,7 +9,6 @@ class Stringa {
   Stringa();
   Stringa(int c);
 
-  //Stringa(char b[]);
   Stringa(const char b[]);
 
   ~Stringa();
