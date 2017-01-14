@@ -1,3 +1,4 @@
+CC=g++
 
 stringa: main.o stringa.o
 

@@ -4,11 +4,13 @@
 class Stringa {
   private:
   char* s;
-  
+
   public:
   Stringa();
   Stringa(int c);
-  Stringa(char b[]);
+
+  //Stringa(char b[]);
+  Stringa(const char b[]);
 
   ~Stringa();
 
