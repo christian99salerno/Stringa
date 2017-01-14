@@ -2,39 +2,41 @@
 #include<string.h>
 
 Stringa::Stringa(){
-  this->s=new char[1];
-  this->s[0]='\0';
+  s=new char[1];
+  s[0]='\0';
 }
 
 Stringa::Stringa(int c){
-  c.set();
+  s=NULL;
+  s.set(c);
 }
 
 Stringa::Stringa(char b[]){
-  this->s=NULL;
-  b.set();
+  s=NULL;
+  s.set(b);
 }
 
 Stringa::~Stringa()
 {
-  if (this->s!=NULL) delete s;
+  if (s!=NULL) delete s;
 }
 
 void set(const int c){
-  this->s=new char[2];
-  this->s[0]=c;
-  this->s[1]='\0';
+  if (s!=NULL) delete s;
+  s=new char[2];
+  s[0]=c;
+  s[1]='\0';
 }
 
 void set(const char* b){
   size=strlen(b);
-  if (this->s!=NULL) delete s;
-  this->s=new char[size];
-  strncpy(this->s, b, size);
-  this->s[size]='\0';
+  if (s!=NULL) delete s;
+  s=new char[size];
+  strncpy(s, b, size);
+  s[size]='\0';
 }
 
 char* get(){
-return this->s;
+return s;
 }
 
