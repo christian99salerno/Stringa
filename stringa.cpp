@@ -53,8 +53,10 @@ int Stringa::indexOf(int c)
 {
   int i;
   int size=strlen(s);
+  
   for(i=0;i<=size;i++){
-    if(s[i]==c)return i;
-    else return -1;
-  }
+    if(s[i]==c) return i;  }
+
+  for(i=0;i<=size;i++){
+    if (s[i]!=c) return -1; }
 }
