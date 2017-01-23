@@ -12,6 +12,6 @@ int main()
 
   cout << lettera.get() << endl;
   cout << frase.get() << endl;
-
+  cout << frase.indexOf('C') << endl;
   return 0;
 }

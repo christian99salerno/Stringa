@@ -26,7 +26,7 @@ Stringa::~Stringa()
   if (s!=NULL) delete[] s;
 }
 
-void Stringa::set(const int c)
+void Stringa::set(int c)
 {
   if (s!=NULL) delete[] s;
   s = new char[2];
@@ -47,4 +47,14 @@ void Stringa::set(const char* b)
 char* Stringa::get()
 {
   return s;
+}
+
+int Stringa::indexOf(int c)
+{
+  int i;
+  int size=strlen(s);
+  for(i=0;i<=size;i++){
+    if(s[i]==c)return i;
+    else return -1;
+  }
 }

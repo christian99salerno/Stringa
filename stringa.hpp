@@ -13,8 +13,9 @@ class Stringa {
 
   ~Stringa();
 
-  void set(const int c);
+  void set(int c);
   void set(const char* b);
   char* get();
+  int indexOf(int c);
 };
 #endif
