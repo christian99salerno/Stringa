@@ -1,5 +1,6 @@
 #include <string.h>
 #include "stringa.hpp"
+#include <iostream>
 
 Stringa::Stringa()
 {
@@ -49,14 +50,24 @@ char* Stringa::get()
   return s;
 }
 
-int Stringa::indexOf(int c)
+int Stringa::indexOf()
 {
+  using namespace std;
+  char car;
   int i;
   int size=strlen(s);
+  int cont=0;
   
-  for(i=0;i<=size;i++){
-    if(s[i]==c) return i;  }
+  cout<<"Inserisci il carattere da ricercare nella stringa ";
+  cin>>car;
 
-  for(i=0;i<=size;i++){
-    if (s[i]!=c) return -1; }
+  for(i=0;i<size;i++){
+    if(s[i]==car){ 
+    cont++;
+    cout<<"Il carattere e' in posizione: "<<i<<endl;
+    }
+     }
+  
+  cout<<"Il numero di volte in cui e' presente e' ";
+  return cont;
 }

@@ -6,12 +6,9 @@ using namespace std;
 
 int main()
 {
-  Stringa str;
-  Stringa lettera('S');
-  Stringa frase("Come state?");
+  Stringa frase("Hello World!!!");
 
-  cout << lettera.get() << endl;
   cout << frase.get() << endl;
-  cout << frase.indexOf('a') << endl;
+  cout << frase.indexOf() << endl;
   return 0;
 }
