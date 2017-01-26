@@ -50,24 +50,31 @@ char* Stringa::get()
   return s;
 }
 
-int Stringa::indexOf()
+int Stringa::indexOf(int c)
 {
   using namespace std;
-  char car;
   int i;
   int size=strlen(s);
-  int cont=0;
   
-  cout<<"Inserisci il carattere da ricercare nella stringa ";
-  cin>>car;
-
   for(i=0;i<size;i++){
-    if(s[i]==car){ 
-    cont++;
-    cout<<"Il carattere e' in posizione: "<<i<<endl;
+    if(s[i]==c){ 
+    cout<<"Il carattere e' in posizione: ";
+    return i;
     }
      }
+  return -1;
+}
+
+int Stringa::indexOf_2(int c_2, int index){
+  using namespace std;
+  int i;
+  int size=strlen(s);
   
-  cout<<"Il numero di volte in cui e' presente e' ";
-  return cont;
+  for(i=index;i<size;i++){
+    if(s[i]==c_2){ 
+    cout<<"Il carattere e' in posizione: ";
+    return i;
+    }
+     }
+  return -1;
 }

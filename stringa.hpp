@@ -16,6 +16,7 @@ class Stringa {
   void set(int c);
   void set(const char* b);
   char* get();
-  int indexOf();
+  int indexOf(int c);
+  int indexOf_2(int c_2, int index);
 };
 #endif
