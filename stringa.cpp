@@ -40,7 +40,7 @@ void Stringa::set(const char* b)
   int size = strlen(b);
 
   if (s!=NULL) delete[] s;
-  s = new char[size];
+  s = new char[size+1];
   strncpy(s, b, size);
   s[size] = '\0';
 }
